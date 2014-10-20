@@ -14,5 +14,11 @@ namespace KoklenSodigerLight
         {
             InitializeComponent();
         }
+
+        private void تاۋارئاساسىيئۇچۇرىToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShangpinXinxi spxx = new ShangpinXinxi();
+            spxx.Show();
+        }
     }
 }

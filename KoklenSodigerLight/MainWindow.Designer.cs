@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.سىستېماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تاۋارئۇچۇرىToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تاۋاركىرگۈزۈشToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تاۋارسېتىشToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ياردەمToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,24 +55,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip1.Location = new System.Drawing.Point(0, 31);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1005, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusStrip1.Location = new System.Drawing.Point(0, 545);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1005, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // سىستېماToolStripMenuItem
             // 
             this.سىستېماToolStripMenuItem.Name = "سىستېماToolStripMenuItem";
@@ -86,6 +68,13 @@
             this.تاۋارئۇچۇرىToolStripMenuItem.Name = "تاۋارئۇچۇرىToolStripMenuItem";
             this.تاۋارئۇچۇرىToolStripMenuItem.Size = new System.Drawing.Size(83, 27);
             this.تاۋارئۇچۇرىToolStripMenuItem.Text = "تاۋار ئۇچۇرى";
+            // 
+            // تاۋارئاساسىيئۇچۇرىToolStripMenuItem
+            // 
+            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Name = "تاۋارئاساسىيئۇچۇرىToolStripMenuItem";
+            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
+            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Text = "تاۋار ئاساسىي ئۇچۇرى";
+            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Click += new System.EventHandler(this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem_Click);
             // 
             // تاۋاركىرگۈزۈشToolStripMenuItem
             // 
@@ -105,11 +94,23 @@
             this.ياردەمToolStripMenuItem.Size = new System.Drawing.Size(50, 27);
             this.ياردەمToolStripMenuItem.Text = "ياردەم";
             // 
-            // تاۋارئاساسىيئۇچۇرىToolStripMenuItem
+            // toolStrip1
             // 
-            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Name = "تاۋارئاساسىيئۇچۇرىToolStripMenuItem";
-            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
-            this.تاۋارئاساسىيئۇچۇرىToolStripMenuItem.Text = "تاۋار ئاساسىي ئۇچۇرى";
+            this.toolStrip1.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.Location = new System.Drawing.Point(0, 31);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1005, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.Location = new System.Drawing.Point(0, 545);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1005, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // MainWindow
             // 
