@@ -14,5 +14,10 @@ namespace KoklenSodigerLight
         {
             InitializeComponent();
         }
+
+        private void ShangpinXinxi_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

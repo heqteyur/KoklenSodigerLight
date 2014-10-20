@@ -33,13 +33,14 @@
             // ShangpinXinxi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(808, 580);
+            this.ClientSize = new System.Drawing.Size(929, 618);
             this.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ShangpinXinxi";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShangpinXinxi";
+            this.Load += new System.EventHandler(this.ShangpinXinxi_Load);
             this.ResumeLayout(false);
 
         }
