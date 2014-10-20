@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Maticsoft.DBUtility;
 
 namespace KoklenSodigerLight
 {
@@ -17,7 +18,7 @@ namespace KoklenSodigerLight
 
         private void ShangpinXinxi_Load(object sender, EventArgs e)
         {
-            
+            MessageBox.Show(DbHelperSQLite.GetSingle("select ID from 商品信息").ToString());
         }
     }
 }
