@@ -23,12 +23,12 @@ namespace KoklenSodigerLight
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DbHelperSQLite.Query("select * from 商品信息").Tables[0];
+            dataGridView1.DataSource = DbHelperSQL.Query("select * from Test").Tables[0];
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DbHelperSQLite.ExecuteSql("insert into 商品信息 values(NULL,'name','1')");
+            DbHelperSQL.ExecuteSql("insert into Test values('A')");
         }
 
 
