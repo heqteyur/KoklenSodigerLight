@@ -21,15 +21,20 @@ namespace KoklenSodigerLight
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            
+            ShangpinXinxiBianji spxxbj = new ShangpinXinxiBianji();
+            spxxbj.Text += "(قوشۇش)";
+            spxxbj.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            
+            ShangpinXinxiBianji spxxbj = new ShangpinXinxiBianji();
+            spxxbj.Text += "(تەھرىرلەش)";
+            spxxbj.ShowDialog();
         }
+
 
 
     }

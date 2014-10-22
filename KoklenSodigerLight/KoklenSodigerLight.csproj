@@ -74,6 +74,12 @@
     <Compile Include="ShangpinXinxi.Designer.cs">
       <DependentUpon>ShangpinXinxi.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShangpinXinxiBianji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShangpinXinxiBianji.Designer.cs">
+      <DependentUpon>ShangpinXinxiBianji.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLServerManager.cs" />
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
@@ -89,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="ShangpinXinxi.resx">
       <DependentUpon>ShangpinXinxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShangpinXinxiBianji.resx">
+      <DependentUpon>ShangpinXinxiBianji.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

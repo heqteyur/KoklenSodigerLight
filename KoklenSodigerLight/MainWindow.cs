@@ -17,9 +17,30 @@ namespace KoklenSodigerLight
 
         private void تاۋارئاساسىيئۇچۇرىToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShangpinXinxi spxx = new ShangpinXinxi();
-            spxx.MdiParent = this;
-            spxx.Show();
+
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            ShangpinXinxi spxx = new ShangpinXinxi();
+            spxx.ShowDialog();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
