@@ -81,6 +81,12 @@
       <DependentUpon>ShangpinXinxiBianji.cs</DependentUpon>
     </Compile>
     <Compile Include="SQLServerManager.cs" />
+    <Compile Include="UMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UMessageBox.Designer.cs">
+      <DependentUpon>UMessageBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,12 +98,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ShangpinXinxi.resx">
       <DependentUpon>ShangpinXinxi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShangpinXinxiBianji.resx">
       <DependentUpon>ShangpinXinxiBianji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMessageBox.resx">
+      <DependentUpon>UMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +136,11 @@
     <Content Include="DB\KoklenSodigerLight_log.ldf">
       <DependentUpon>KoklenSodigerLight.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\question24.png" />
+    <None Include="Resources\warning24.png" />
+    <None Include="Resources\ok24.png" />
+    <None Include="Resources\info24.png" />
+    <None Include="Resources\error24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
