@@ -111,6 +111,7 @@
             this.label3.Size = new System.Drawing.Size(63, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "تاۋار تۈرى:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBox3
             // 
@@ -252,12 +253,13 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 30);
+            this.label2.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(176, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "تاياق كود:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label10
             // 
@@ -279,6 +281,7 @@
             this.label4.Size = new System.Drawing.Size(51, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "بىرلىكى:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label7
             // 

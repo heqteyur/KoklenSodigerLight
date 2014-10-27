@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Maticsoft.DBUtility;
+using System.Net;
+
 
 namespace KoklenSodigerLight
 {
@@ -33,6 +35,12 @@ namespace KoklenSodigerLight
             ShangpinXinxiBianji spxxbj = new ShangpinXinxiBianji();
             spxxbj.Text += "(تەھرىرلەش)";
             spxxbj.ShowDialog();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+
+
         }
 
 

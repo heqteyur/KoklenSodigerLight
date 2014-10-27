@@ -905,6 +905,21 @@ namespace Maticsoft.DBUtility
         }
         #endregion
 
+        #region
+        public static int FutrueID(string tableName)
+        {
+            object obj = GetSingle("SELECT IDENT_CURRENT(@tableName) + IDENT_INCR(@tableName)", new SqlParameter("@tableName", tableName));
+            if (obj == null)
+            {
+                return 0;
+            }
+            else
+            {
+                return int.Parse(obj.ToString());
+            }
+        }
+
+        #endregion
     }
 
 }
