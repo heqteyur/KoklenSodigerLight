@@ -7,5 +7,6 @@ namespace KoklenSodigerLight
     public class ConfigParams
     {
         public static int BarCodeBase = 10000;
+        public static int CostomCodeBase = 100;
     }
 }

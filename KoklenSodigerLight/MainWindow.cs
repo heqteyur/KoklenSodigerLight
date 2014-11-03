@@ -15,6 +15,8 @@ namespace KoklenSodigerLight
             InitializeComponent();
         }
 
+        public static string LoginUsser = "Mahmutjan";
+
         private void تاۋارئاساسىيئۇچۇرىToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -22,7 +24,7 @@ namespace KoklenSodigerLight
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)

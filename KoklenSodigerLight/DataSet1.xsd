@@ -12,7 +12,7 @@
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ProductType" msprop:Generator_TableClassName="ProductTypeDataTable" msprop:Generator_TableVarName="tableProductType" msprop:Generator_RowChangedName="ProductTypeRowChanged" msprop:Generator_TablePropName="ProductType" msprop:Generator_RowDeletingName="ProductTypeRowDeleting" msprop:Generator_RowChangingName="ProductTypeRowChanging" msprop:Generator_RowEvHandlerName="ProductTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTypeRowDeleted" msprop:Generator_RowClassName="ProductTypeRow" msprop:Generator_UserTableName="ProductType" msprop:Generator_RowEvArgName="ProductTypeRowChangeEvent">
+        <xs:element name="ProductType" msprop:Generator_TableClassName="ProductTypeDataTable" msprop:Generator_TableVarName="tableProductType" msprop:Generator_TablePropName="ProductType" msprop:Generator_RowDeletingName="ProductTypeRowDeleting" msprop:Generator_RowChangingName="ProductTypeRowChanging" msprop:Generator_RowEvHandlerName="ProductTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTypeRowDeleted" msprop:Generator_UserTableName="ProductType" msprop:Generator_RowChangedName="ProductTypeRowChanged" msprop:Generator_RowEvArgName="ProductTypeRowChangeEvent" msprop:Generator_RowClassName="ProductTypeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
@@ -20,7 +20,15 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Weight" msprop:Generator_TableClassName="WeightDataTable" msprop:Generator_TableVarName="tableWeight" msprop:Generator_TablePropName="Weight" msprop:Generator_RowDeletingName="WeightRowDeleting" msprop:Generator_RowChangingName="WeightRowChanging" msprop:Generator_RowEvHandlerName="WeightRowChangeEventHandler" msprop:Generator_RowDeletedName="WeightRowDeleted" msprop:Generator_UserTableName="Weight" msprop:Generator_RowChangedName="WeightRowChanged" msprop:Generator_RowEvArgName="WeightRowChangeEvent" msprop:Generator_RowClassName="WeightRow">
+        <xs:element name="Weight" msprop:Generator_TableClassName="WeightDataTable" msprop:Generator_TableVarName="tableWeight" msprop:Generator_RowChangedName="WeightRowChanged" msprop:Generator_TablePropName="Weight" msprop:Generator_RowDeletingName="WeightRowDeleting" msprop:Generator_RowChangingName="WeightRowChanging" msprop:Generator_RowEvHandlerName="WeightRowChangeEventHandler" msprop:Generator_RowDeletedName="WeightRowDeleted" msprop:Generator_RowClassName="WeightRow" msprop:Generator_UserTableName="Weight" msprop:Generator_RowEvArgName="WeightRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SearchFilter" msprop:Generator_TableClassName="SearchFilterDataTable" msprop:Generator_TableVarName="tableSearchFilter" msprop:Generator_TablePropName="SearchFilter" msprop:Generator_RowDeletingName="SearchFilterRowDeleting" msprop:Generator_RowChangingName="SearchFilterRowChanging" msprop:Generator_RowEvHandlerName="SearchFilterRowChangeEventHandler" msprop:Generator_RowDeletedName="SearchFilterRowDeleted" msprop:Generator_UserTableName="SearchFilter" msprop:Generator_RowChangedName="SearchFilterRowChanged" msprop:Generator_RowEvArgName="SearchFilterRowChangeEvent" msprop:Generator_RowClassName="SearchFilterRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
