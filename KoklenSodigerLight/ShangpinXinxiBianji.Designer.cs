@@ -194,6 +194,7 @@
             this.textBox5.Size = new System.Drawing.Size(95, 31);
             this.textBox5.TabIndex = 6;
             this.textBox5.Text = "0.000";
+            this.textBox5.Leave += new System.EventHandler(this.ComputePrice);
             // 
             // textBox4
             // 
@@ -204,6 +205,7 @@
             this.textBox4.Size = new System.Drawing.Size(104, 31);
             this.textBox4.TabIndex = 5;
             this.textBox4.Text = "0.000";
+            this.textBox4.Leave += new System.EventHandler(this.ComputePrice);
             // 
             // textBox8
             // 
@@ -252,7 +254,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(176, 32);
             this.label2.Name = "label2";

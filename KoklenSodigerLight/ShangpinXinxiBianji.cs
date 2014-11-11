@@ -101,7 +101,15 @@ namespace KoklenSodigerLight
             }
             else
             {
-                
+                prmList.Add(new SqlParameter("@ID", dr.Cells["ID"].Value.ToString()));
+
+                if (DbHelperSQL.ExecuteSql("UPDATE  商品信息 SET 名称 = @名称, 分类 = @分类, 规格型号 = @规格型号, 条码 = @条码, 单位 = @单位, 品牌 = @品牌, 进价 = @进价, 售价 = @售价, 类型 = @类型, 自设编号 = @自设编号, 是否称重 = @是否称重, 备注 = @备注, 操作时间 = @操作时间, 操作用户 = @操作用户, 状态 = @状态 where ID=@ID", prmList.ToArray()) > 0)
+                {
+                    Utility.InitializeDataGridViewRowBySqlParameter(dr, prmList.ToArray());
+                    UMessageBox.UShow("تەھرىرلەش تامام", "ئەسكەرتىش");
+                    this.Close();
+                    Operation = "Edited";
+                }
             }
 
 
@@ -121,8 +129,8 @@ namespace KoklenSodigerLight
             comboBox3.DisplayMember = "Name";
             comboBox3.ValueMember = "Value";
 
-            ds1.Tables["Weight"].Rows.Add("ياق", "0");
-            ds1.Tables["Weight"].Rows.Add("ھەئە", "1");
+            ds1.Tables["Weight"].Rows.Add("ياق", "False");
+            ds1.Tables["Weight"].Rows.Add("ھەئە", "True");
             comboBox4.DataSource = ds1.Tables["Weight"];
             comboBox4.DisplayMember = "Name";
             comboBox4.ValueMember = "Value";
@@ -132,6 +140,17 @@ namespace KoklenSodigerLight
             if(dr!=null)
             {
                 textBox1.Text = dr.Cells["名称"].Value.ToString();
+                textBox2.Text = dr.Cells["条码"].Value.ToString();
+                comboBox1.SelectedValue = dr.Cells["分类"].Value.ToString();
+                comboBox2.SelectedValue = dr.Cells["单位"].Value.ToString();
+                textBox3.Text = dr.Cells["规格型号"].Value.ToString();
+                textBox4.Text = dr.Cells["进价"].Value.ToString();
+                textBox5.Text = dr.Cells["售价"].Value.ToString();
+                textBox6.Text = dr.Cells["品牌"].Value.ToString();
+                comboBox3.SelectedValue = dr.Cells["类型"].Value.ToString();
+                comboBox4.SelectedValue = dr.Cells["是否称重"].Value.ToString();
+                textBox7.Text = dr.Cells["自设编号"].Value.ToString();
+                textBox8.Text = dr.Cells["备注"].Value.ToString();
             }
         }
 
@@ -167,7 +186,29 @@ namespace KoklenSodigerLight
 
         private void label2_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void ComputePrice(object sender, EventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            object objCal = null;
+            try
+            {
+                objCal = new DataTable().Compute(tb.Text.Trim(), "");
+            }
+            catch(Exception ex)
+            {
+                objCal = null;
+            }
+            if (objCal != null && tb.Text.Trim() != "" && objCal.ToString() != "")
+            {
+                tb.Text = decimal.Parse(objCal.ToString()).ToString("N", MainWindow.nfi);
+            }
+            else
+            {
+                tb.Text = "0.000";
+            }
         }
     }
 }

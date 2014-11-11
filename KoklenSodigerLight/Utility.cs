@@ -108,5 +108,13 @@ namespace KoklenSodigerLight
             }
             SetConfig(dgv.FindForm().Name + "_" + dgv.Name, sb.ToString());
         }
+
+        public static void InitializeDataGridViewRowBySqlParameter(DataGridViewRow dgvr,params SqlParameter[] parameters)
+        {
+            foreach(SqlParameter prm in parameters)
+            {
+                dgvr.Cells[prm.ParameterName.Replace("@","")].Value = prm.Value.ToString();
+            }
+        }
     }
 }
