@@ -72,6 +72,14 @@ namespace KoklenSodigerLight
                 }
             }
 
+            if (DbHelperSQL.GetSingle("select 名称 from 商品信息 where 条码=@条码 and 状态=1", new SqlParameter("@条码", textBox2.Text.Trim())) != null && textBox2.Text.Trim() != (dr == null ? "" : dr.Cells["条码"].Value.ToString()))
+            {
+                UMessageBox.UShow("تاياق كودى مەۋجۈت ئىكەن، تەكشۈرۈپ بېقىڭ.", "ئەسكەرتىش", MessageBoxIcon.Error);
+                textBox2.Focus();
+                textBox2.SelectAll();
+                return;
+            }
+
             List<SqlParameter> prmList = new List<SqlParameter>();
             prmList.Add(new SqlParameter("@名称", textBox1.Text.Trim()));
             prmList.Add(new SqlParameter("@分类", comboBox1.SelectedValue));

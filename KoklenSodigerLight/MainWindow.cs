@@ -44,7 +44,20 @@ namespace KoklenSodigerLight
         {
             nfi = new NumberFormatInfo();
             nfi.NumberDecimalDigits = 3;
+
         }
+
+        private void sideButton1_ButtonClick(object sender, EventArgs e)
+        {
+            Utility.AddUserControlToPanle(panel2, new XiaoshouGuanliPanel());
+        }
+
+
+
+
+
+
+
 
         
     }

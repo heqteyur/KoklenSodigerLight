@@ -116,5 +116,27 @@ namespace KoklenSodigerLight
                 dgvr.Cells[prm.ParameterName.Replace("@","")].Value = prm.Value.ToString();
             }
         }
+
+        public static void AddUserControlToPanle(Panel panel,UserControl userControl)
+        {
+            if(!panel.Controls.ContainsKey(userControl.Name))
+            {
+                panel.Controls.Clear();
+                userControl.Location = new Point((panel.Width - userControl.Width) / 2, (panel.Height - userControl.Height) / 2);
+                panel.Controls.Add(userControl);
+                panel.Resize += panel_Resize;
+            }
+
+        }
+
+        static void panel_Resize(object sender, EventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel.Controls.Count > 0)
+            {
+                UserControl userControl = panel.Controls[0] as UserControl;
+                userControl.Location = new Point((panel.Width - userControl.Width) / 2, (panel.Height - userControl.Height) / 2);
+            }
+        }
     }
 }

@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandInfo.cs" />
+    <Compile Include="ComonData.cs" />
     <Compile Include="ConfigParams.cs" />
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -79,6 +80,12 @@
     </Compile>
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MiddleButton.Designer.cs">
+      <DependentUpon>MiddleButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,12 +113,24 @@
     <Compile Include="ShangpinXinxiBianji.Designer.cs">
       <DependentUpon>ShangpinXinxiBianji.cs</DependentUpon>
     </Compile>
+    <Compile Include="SideButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SideButton.Designer.cs">
+      <DependentUpon>SideButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLServerManager.cs" />
     <Compile Include="TestWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TestWindow.Designer.cs">
       <DependentUpon>TestWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopButton.Designer.cs">
+      <DependentUpon>TopButton.cs</DependentUpon>
     </Compile>
     <Compile Include="UMessageBox.cs">
       <SubType>Form</SubType>
@@ -120,8 +139,17 @@
       <DependentUpon>UMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility.cs" />
+    <Compile Include="XiaoshouGuanliPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XiaoshouGuanliPanel.Designer.cs">
+      <DependentUpon>XiaoshouGuanliPanel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiddleButton.resx">
+      <DependentUpon>MiddleButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -145,11 +173,20 @@
     <EmbeddedResource Include="ShangpinXinxiBianji.resx">
       <DependentUpon>ShangpinXinxiBianji.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SideButton.resx">
+      <DependentUpon>SideButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestWindow.resx">
       <DependentUpon>TestWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TopButton.resx">
+      <DependentUpon>TopButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UMessageBox.resx">
       <DependentUpon>UMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XiaoshouGuanliPanel.resx">
+      <DependentUpon>XiaoshouGuanliPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -194,6 +231,9 @@
     <None Include="Resources\ok24.png" />
     <None Include="Resources\info24.png" />
     <None Include="Resources\error24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
