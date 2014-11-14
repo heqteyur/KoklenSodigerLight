@@ -52,6 +52,17 @@ namespace KoklenSodigerLight
             Utility.AddUserControlToPanle(panel2, new XiaoshouGuanliPanel());
         }
 
+        private void topButton1_ButtonClick(object sender, EventArgs e)
+        {
+            ShangpinXinxi spxx = new ShangpinXinxi();
+            spxx.ShowDialog();
+        }
+
+        private void topButton6_ButtonClick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
 
 
 

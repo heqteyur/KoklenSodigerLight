@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using Maticsoft.DBUtility;
 using System.Net;
 using System.Data.SqlClient;
+using System.Threading;
 
 
 namespace KoklenSodigerLight
@@ -16,6 +17,7 @@ namespace KoklenSodigerLight
     {
         public ShangpinXinxi()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
@@ -23,17 +25,17 @@ namespace KoklenSodigerLight
         private void ShangpinXinxi_Load(object sender, EventArgs e)
         {
             Utility.DGVColumnWidthAutomation(dataGridView1);
-            LoadShangpinXinxi();
-
-            toolStripComboBox1.ComboBox.DataSource = ComonData.GetFilterDataTable();
-            toolStripComboBox1.ComboBox.DisplayMember = "Name";
-            toolStripComboBox1.ComboBox.ValueMember = "Value";
-            
+            new Thread(new ThreadStart(LoadShangpinXinxiThread)).Start();
         }
 
+        private void LoadShangpinXinxiThread()
+        {
+            Thread.Sleep(50);
+            this.Invoke(new MethodInvoker(LoadShangpinXinxi));
+        }
         private void LoadShangpinXinxi()
         {
-            dtShangpinXinxi = ComonData.GetShangpinXinxi();
+            dtShangpinXinxi = CommonData.GetShangpinXinxi();
             dataGridView1.DataSource = dtShangpinXinxi;
             Utility.SwitchVisibleOfDGV(dataGridView1, false, "分类", "单位", "类型","状态");
 
@@ -102,23 +104,11 @@ namespace KoklenSodigerLight
             toolStripStatusLabel2.Text = dataGridView1.Rows.Count.ToString();
         }
 
-        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(toolStripComboBox1.ComboBox.SelectedValue.ToString()=="名称")
-            {
-                toolStripTextBox1.RightToLeft = RightToLeft.Yes;
-            }
-            else
-            {
-                toolStripTextBox1.RightToLeft = RightToLeft.No;
-            }
-        }
-
         private void toolStripTextBox1_TextChanged(object sender, EventArgs e)
         {
             string text=toolStripTextBox1.Text.Trim().Replace("'","").Replace("[","");
             DataView dv = dtShangpinXinxi.DefaultView;
-            string filter = String.Format("{0} like '{1}%'" ,toolStripComboBox1.ComboBox.SelectedValue.ToString() ,text );
+            string filter = String.Format("条码 like '{0}%' or 名称 like '{0}%' or 自设编号 like '{0}%'", text);
             dv.RowFilter = filter;
             dataGridView1.DataSource = dv;
         }

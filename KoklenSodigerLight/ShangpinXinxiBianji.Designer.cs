@@ -155,10 +155,13 @@
             // 
             // textBox7
             // 
+            this.textBox7.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(14, 182);
             this.textBox7.Name = "textBox7";
+            this.textBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox7.Size = new System.Drawing.Size(157, 31);
             this.textBox7.TabIndex = 10;
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
             // 
@@ -232,6 +235,7 @@
             this.label11.Size = new System.Drawing.Size(50, 23);
             this.label11.TabIndex = 0;
             this.label11.Text = "ئۆز كود:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label8
             // 

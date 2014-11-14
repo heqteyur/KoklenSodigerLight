@@ -31,20 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sideButton5 = new KoklenSodigerLight.SideButton();
+            this.sideButton4 = new KoklenSodigerLight.SideButton();
+            this.sideButton3 = new KoklenSodigerLight.SideButton();
+            this.sideButton2 = new KoklenSodigerLight.SideButton();
+            this.sideButton1 = new KoklenSodigerLight.SideButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.topButton6 = new KoklenSodigerLight.TopButton();
             this.topButton5 = new KoklenSodigerLight.TopButton();
             this.topButton4 = new KoklenSodigerLight.TopButton();
             this.topButton3 = new KoklenSodigerLight.TopButton();
             this.topButton2 = new KoklenSodigerLight.TopButton();
             this.topButton1 = new KoklenSodigerLight.TopButton();
-            this.sideButton5 = new KoklenSodigerLight.SideButton();
-            this.sideButton4 = new KoklenSodigerLight.SideButton();
-            this.sideButton3 = new KoklenSodigerLight.SideButton();
-            this.sideButton2 = new KoklenSodigerLight.SideButton();
-            this.sideButton1 = new KoklenSodigerLight.SideButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,80 @@
             this.panel1.Size = new System.Drawing.Size(200, 459);
             this.panel1.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.label1.Location = new System.Drawing.Point(3, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 3);
+            this.label1.TabIndex = 1;
+            // 
+            // sideButton5
+            // 
+            this.sideButton5.AutoSize = true;
+            this.sideButton5.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.sideButton5.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton5.ButtonImage")));
+            this.sideButton5.ButtonText = "ئۇنىۋېرسال ستاتىستىكا";
+            this.sideButton5.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideButton5.Location = new System.Drawing.Point(10, 329);
+            this.sideButton5.Name = "sideButton5";
+            this.sideButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.sideButton5.Size = new System.Drawing.Size(182, 36);
+            this.sideButton5.TabIndex = 0;
+            // 
+            // sideButton4
+            // 
+            this.sideButton4.AutoSize = true;
+            this.sideButton4.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.sideButton4.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton4.ButtonImage")));
+            this.sideButton4.ButtonText = "ئامبار تەكشۈرۈش";
+            this.sideButton4.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideButton4.Location = new System.Drawing.Point(10, 255);
+            this.sideButton4.Name = "sideButton4";
+            this.sideButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.sideButton4.Size = new System.Drawing.Size(182, 36);
+            this.sideButton4.TabIndex = 0;
+            // 
+            // sideButton3
+            // 
+            this.sideButton3.AutoSize = true;
+            this.sideButton3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.sideButton3.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton3.ButtonImage")));
+            this.sideButton3.ButtonText = "سىستېما باشقۇرۇش";
+            this.sideButton3.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideButton3.Location = new System.Drawing.Point(10, 181);
+            this.sideButton3.Name = "sideButton3";
+            this.sideButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.sideButton3.Size = new System.Drawing.Size(182, 36);
+            this.sideButton3.TabIndex = 0;
+            // 
+            // sideButton2
+            // 
+            this.sideButton2.AutoSize = true;
+            this.sideButton2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.sideButton2.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton2.ButtonImage")));
+            this.sideButton2.ButtonText = "ستاتىستىكا دوكلاتى";
+            this.sideButton2.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideButton2.Location = new System.Drawing.Point(10, 107);
+            this.sideButton2.Name = "sideButton2";
+            this.sideButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.sideButton2.Size = new System.Drawing.Size(182, 36);
+            this.sideButton2.TabIndex = 0;
+            // 
+            // sideButton1
+            // 
+            this.sideButton1.AutoSize = true;
+            this.sideButton1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.sideButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton1.ButtonImage")));
+            this.sideButton1.ButtonText = "سېتىشنى باشقۇرۇش";
+            this.sideButton1.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideButton1.Location = new System.Drawing.Point(8, 33);
+            this.sideButton1.Name = "sideButton1";
+            this.sideButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.sideButton1.Size = new System.Drawing.Size(182, 36);
+            this.sideButton1.TabIndex = 0;
+            this.sideButton1.ButtonClick += new System.EventHandler(this.sideButton1_ButtonClick);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -105,14 +179,6 @@
             this.panel3.Size = new System.Drawing.Size(983, 74);
             this.panel3.TabIndex = 6;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.label1.Location = new System.Drawing.Point(3, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 3);
-            this.label1.TabIndex = 1;
-            // 
             // topButton6
             // 
             this.topButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -126,6 +192,7 @@
             this.topButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.topButton6.Size = new System.Drawing.Size(130, 60);
             this.topButton6.TabIndex = 0;
+            this.topButton6.ButtonClick += new System.EventHandler(this.topButton6_ButtonClick);
             // 
             // topButton5
             // 
@@ -196,72 +263,7 @@
             this.topButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.topButton1.Size = new System.Drawing.Size(130, 60);
             this.topButton1.TabIndex = 0;
-            // 
-            // sideButton5
-            // 
-            this.sideButton5.AutoSize = true;
-            this.sideButton5.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.sideButton5.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton5.ButtonImage")));
-            this.sideButton5.ButtonText = "ئۇنىۋېرسال ستاتىستىكا";
-            this.sideButton5.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sideButton5.Location = new System.Drawing.Point(10, 329);
-            this.sideButton5.Name = "sideButton5";
-            this.sideButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sideButton5.Size = new System.Drawing.Size(182, 36);
-            this.sideButton5.TabIndex = 0;
-            // 
-            // sideButton4
-            // 
-            this.sideButton4.AutoSize = true;
-            this.sideButton4.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.sideButton4.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton4.ButtonImage")));
-            this.sideButton4.ButtonText = "ئامبار تەكشۈرۈش";
-            this.sideButton4.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sideButton4.Location = new System.Drawing.Point(10, 255);
-            this.sideButton4.Name = "sideButton4";
-            this.sideButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sideButton4.Size = new System.Drawing.Size(182, 36);
-            this.sideButton4.TabIndex = 0;
-            // 
-            // sideButton3
-            // 
-            this.sideButton3.AutoSize = true;
-            this.sideButton3.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.sideButton3.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton3.ButtonImage")));
-            this.sideButton3.ButtonText = "سىستېما باشقۇرۇش";
-            this.sideButton3.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sideButton3.Location = new System.Drawing.Point(10, 181);
-            this.sideButton3.Name = "sideButton3";
-            this.sideButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sideButton3.Size = new System.Drawing.Size(182, 36);
-            this.sideButton3.TabIndex = 0;
-            // 
-            // sideButton2
-            // 
-            this.sideButton2.AutoSize = true;
-            this.sideButton2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.sideButton2.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton2.ButtonImage")));
-            this.sideButton2.ButtonText = "ستاتىستىكا دوكلاتى";
-            this.sideButton2.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sideButton2.Location = new System.Drawing.Point(10, 107);
-            this.sideButton2.Name = "sideButton2";
-            this.sideButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sideButton2.Size = new System.Drawing.Size(182, 36);
-            this.sideButton2.TabIndex = 0;
-            // 
-            // sideButton1
-            // 
-            this.sideButton1.AutoSize = true;
-            this.sideButton1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.sideButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("sideButton1.ButtonImage")));
-            this.sideButton1.ButtonText = "سېتىشنى باشقۇرۇش";
-            this.sideButton1.Font = new System.Drawing.Font("ALKATIP UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sideButton1.Location = new System.Drawing.Point(8, 33);
-            this.sideButton1.Name = "sideButton1";
-            this.sideButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sideButton1.Size = new System.Drawing.Size(182, 36);
-            this.sideButton1.TabIndex = 0;
-            this.sideButton1.ButtonClick += new System.EventHandler(this.sideButton1_ButtonClick);
+            this.topButton1.ButtonClick += new System.EventHandler(this.topButton1_ButtonClick);
             // 
             // MainWindow
             // 

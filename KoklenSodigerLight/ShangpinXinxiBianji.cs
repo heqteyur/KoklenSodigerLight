@@ -80,6 +80,17 @@ namespace KoklenSodigerLight
                 return;
             }
 
+            if(textBox7.Text.Trim()!="")
+            {
+                if (DbHelperSQL.GetSingle("select 自设编号 from 商品信息 where 自设编号=@自设编号 and 状态=1", new SqlParameter("@自设编号", textBox7.Text.Trim())) != null && textBox7.Text.Trim() != (dr == null ? "" : dr.Cells["自设编号"].Value.ToString()))
+                {
+                    UMessageBox.UShow("بۇ ئۆز كود مەۋجۈت ئىكەن، تەكشۈرۈپ بېقىڭ.", "ئەسكەرتىش", MessageBoxIcon.Error);
+                    textBox7.Focus();
+                    textBox7.SelectAll();
+                    return;
+                }
+            }
+
             List<SqlParameter> prmList = new List<SqlParameter>();
             prmList.Add(new SqlParameter("@名称", textBox1.Text.Trim()));
             prmList.Add(new SqlParameter("@分类", comboBox1.SelectedValue));
@@ -129,7 +140,7 @@ namespace KoklenSodigerLight
 
             LoadShangpinDanwei();
 
-            DataSet1 ds1 = new DataSet1();
+            CommonDataset ds1 = new CommonDataset();
 
             ds1.Tables["ProductType"].Rows.Add("سانى بار مەھسۇلات", "Product");
             ds1.Tables["ProductType"].Rows.Add("سانى يوق مۇلازىمەت", "Service");
@@ -217,6 +228,11 @@ namespace KoklenSodigerLight
             {
                 tb.Text = "0.000";
             }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            textBox7.Text = "OK" + (int.Parse(DbHelperSQL.GetSingle("SELECT COUNT(ID) FROM 商品信息 WHERE (自设编号 <> '')").ToString()) + ConfigParams.CostomCodeBase);
         }
     }
 }

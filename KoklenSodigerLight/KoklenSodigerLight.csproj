@@ -62,17 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandInfo.cs" />
-    <Compile Include="ComonData.cs" />
-    <Compile Include="ConfigParams.cs" />
-    <Compile Include="DataSet1.cs">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <Compile Include="CommonDataset.cs">
+      <DependentUpon>CommonDataset.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DataSet1.Designer.cs">
+    <Compile Include="CommonDataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <DependentUpon>CommonDataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CommonData.cs" />
+    <Compile Include="ConfigParams.cs" />
     <Compile Include="DbHelperSQL.cs" />
     <Compile Include="DbHelperSQLite.cs" />
     <Compile Include="MainWindow.cs">
@@ -188,16 +188,16 @@
     <EmbeddedResource Include="XiaoshouGuanliPanel.resx">
       <DependentUpon>XiaoshouGuanliPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <None Include="CommonDataset.xsc">
+      <DependentUpon>CommonDataset.xsd</DependentUpon>
     </None>
-    <None Include="DataSet1.xsd">
+    <None Include="CommonDataset.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>CommonDataset.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <None Include="CommonDataset.xss">
+      <DependentUpon>CommonDataset.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -226,15 +226,30 @@
     <Content Include="DB\KoklenSodigerLight_log.ldf">
       <DependentUpon>KoklenSodigerLight.mdf</DependentUpon>
     </Content>
+    <Content Include="Icons\backshop48.png" />
+    <Content Include="Icons\bascket48.png" />
+    <Content Include="Icons\cashier48.png" />
+    <Content Include="Icons\finance48.png" />
+    <Content Include="Icons\help48.png" />
+    <Content Include="Icons\house48.png" />
+    <Content Include="Icons\house_1_48.png" />
+    <Content Include="Icons\list48.png" />
+    <Content Include="Icons\log48.png" />
+    <Content Include="Icons\money48.png" />
+    <Content Include="Icons\poweroff48.png" />
+    <Content Include="Icons\search48.png" />
+    <Content Include="Icons\setting48.png" />
+    <Content Include="Icons\shoppingcart48.png" />
+    <Content Include="Icons\statistics48.png" />
+    <Content Include="Icons\statistics_1_48.png" />
+    <Content Include="Icons\users48.png" />
     <None Include="Resources\question24.png" />
     <None Include="Resources\warning24.png" />
     <None Include="Resources\ok24.png" />
     <None Include="Resources\info24.png" />
     <None Include="Resources\error24.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Icons\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
