@@ -196,7 +196,7 @@
             this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox5.Size = new System.Drawing.Size(95, 31);
             this.textBox5.TabIndex = 6;
-            this.textBox5.Text = "0.000";
+            this.textBox5.Text = "0.0000";
             this.textBox5.Leave += new System.EventHandler(this.ComputePrice);
             // 
             // textBox4
@@ -207,7 +207,7 @@
             this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox4.Size = new System.Drawing.Size(104, 31);
             this.textBox4.TabIndex = 5;
-            this.textBox4.Text = "0.000";
+            this.textBox4.Text = "0.0000";
             this.textBox4.Leave += new System.EventHandler(this.ComputePrice);
             // 
             // textBox8

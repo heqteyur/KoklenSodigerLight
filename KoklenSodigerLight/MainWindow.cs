@@ -43,7 +43,7 @@ namespace KoklenSodigerLight
         private void MainWindow_Load(object sender, EventArgs e)
         {
             nfi = new NumberFormatInfo();
-            nfi.NumberDecimalDigits = 3;
+            nfi.NumberDecimalDigits = 4;
 
         }
 

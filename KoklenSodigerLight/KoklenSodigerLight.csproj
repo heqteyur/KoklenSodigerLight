@@ -75,6 +75,12 @@
     <Compile Include="ConfigParams.cs" />
     <Compile Include="DbHelperSQL.cs" />
     <Compile Include="DbHelperSQLite.cs" />
+    <Compile Include="KuCunDanju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KuCunDanju.Designer.cs">
+      <DependentUpon>KuCunDanju.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="XiaoshouGuanliPanel.Designer.cs">
       <DependentUpon>XiaoshouGuanliPanel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="KuCunDanju.resx">
+      <DependentUpon>KuCunDanju.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,23 +235,35 @@
     <Content Include="DB\KoklenSodigerLight_log.ldf">
       <DependentUpon>KoklenSodigerLight.mdf</DependentUpon>
     </Content>
+    <Content Include="Icons\add32.png" />
     <Content Include="Icons\backshop48.png" />
     <Content Include="Icons\bascket48.png" />
     <Content Include="Icons\cashier48.png" />
+    <Content Include="Icons\down24.png" />
+    <Content Include="Icons\edit32.png" />
+    <Content Include="Icons\error24.png" />
+    <Content Include="Icons\export32.png" />
     <Content Include="Icons\finance48.png" />
     <Content Include="Icons\help48.png" />
     <Content Include="Icons\house48.png" />
     <Content Include="Icons\house_1_48.png" />
+    <Content Include="Icons\import32.png" />
+    <Content Include="Icons\info24.png" />
     <Content Include="Icons\list48.png" />
     <Content Include="Icons\log48.png" />
     <Content Include="Icons\money48.png" />
+    <Content Include="Icons\ok24.png" />
+    <Content Include="Icons\phone24.png" />
     <Content Include="Icons\poweroff48.png" />
+    <Content Include="Icons\question24.png" />
+    <Content Include="Icons\remove32.png" />
     <Content Include="Icons\search48.png" />
     <Content Include="Icons\setting48.png" />
     <Content Include="Icons\shoppingcart48.png" />
     <Content Include="Icons\statistics48.png" />
     <Content Include="Icons\statistics_1_48.png" />
     <Content Include="Icons\users48.png" />
+    <Content Include="Icons\warning24.png" />
     <None Include="Resources\question24.png" />
     <None Include="Resources\warning24.png" />
     <None Include="Resources\ok24.png" />

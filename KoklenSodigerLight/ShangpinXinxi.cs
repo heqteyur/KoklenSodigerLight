@@ -40,19 +40,20 @@ namespace KoklenSodigerLight
             Utility.SwitchVisibleOfDGV(dataGridView1, false, "分类", "单位", "类型","状态");
 
             dataGridView1.Columns["ID"].HeaderText = "رېتى";
-            dataGridView1.Columns["名称"].HeaderText = "";
-            dataGridView1.Columns["分类名称"].HeaderText = "";
-            dataGridView1.Columns["规格型号"].HeaderText = "";
-            dataGridView1.Columns["条码"].HeaderText = "";
-            dataGridView1.Columns["单位名称"].HeaderText = "";
-            dataGridView1.Columns["品牌"].HeaderText = "";
-            dataGridView1.Columns["进价"].HeaderText = "";
-            dataGridView1.Columns["售价"].HeaderText = "";
-            dataGridView1.Columns["自设编号"].HeaderText = "";
-            dataGridView1.Columns["是否称重"].HeaderText = "";
-            dataGridView1.Columns["备注"].HeaderText = "";
-            dataGridView1.Columns["操作时间"].HeaderText = "";
-            dataGridView1.Columns["操作用户"].HeaderText = "";
+            dataGridView1.Columns["名称"].HeaderText = "تاۋار نامى";
+            dataGridView1.Columns["分类名称"].HeaderText = "تاۋار تۈرى";
+            dataGridView1.Columns["规格型号"].HeaderText = "ئۆلچەم تىپ";
+            dataGridView1.Columns["条码"].HeaderText = "تاياق كود";
+            dataGridView1.Columns["单位名称"].HeaderText = "بىرلىك";
+            dataGridView1.Columns["品牌"].HeaderText = "ماركا";
+            dataGridView1.Columns["进价"].HeaderText = "كىرىش باھاسى";
+            dataGridView1.Columns["售价"].HeaderText = "سېتىش باھاسى";
+            dataGridView1.Columns["自设编号"].HeaderText = "ئۆز كودى";
+            dataGridView1.Columns["库存数量"].HeaderText = "ئامباردىكى سانى";
+            dataGridView1.Columns["是否称重"].HeaderText = "تارازىدىمۇ";
+            dataGridView1.Columns["备注"].HeaderText = "ئىزاھات";
+            dataGridView1.Columns["操作时间"].HeaderText = "مەشغۇلات ۋاقتى";
+            dataGridView1.Columns["操作用户"].HeaderText = "مەشغۇلات قىلغۇچى";
 
         }
 
@@ -111,6 +112,14 @@ namespace KoklenSodigerLight
             string filter = String.Format("条码 like '{0}%' or 名称 like '{0}%' or 自设编号 like '{0}%'", text);
             dv.RowFilter = filter;
             dataGridView1.DataSource = dv;
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            KuCunDanju kcdj = new KuCunDanju();
+            kcdj.Operation = "RUKU";
+            kcdj.Text = "ئامبارغا تاۋار كىرگۈزۈش";
+            kcdj.ShowDialog();
         }
 
 
